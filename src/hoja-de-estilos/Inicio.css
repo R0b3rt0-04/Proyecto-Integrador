@@ -1,0 +1,89 @@
+
+.IIInicio{
+    content: '';
+}
+
+.Cimagentitulo{
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    height: fit-content;
+}
+
+.imagenRYCD{
+    padding-left: 1vw;
+    width: 30%;
+}
+
+.imagnesdeinicio{
+    align-content: center;
+    text-shadow: 0 0 0.80em rgba(0, 255, 106, 0.1), 0 0 0.39em rgba(0, 255, 34, 0.75);
+    color: white;
+    text-align: center;
+    font-size: 2.5vh;
+    z-index: 1;
+    width: 30vw;
+    height: 30vh;
+    position: fixed;
+    left: 35%;
+    top: 30%;
+}
+
+.divdegif{
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+}   
+
+.divdegif::before{
+    content: '';
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background: #81dbcb00;
+    box-shadow: 1px -1px 400px 5rem #60ff82;
+    z-index: -1;
+    animation: rotate-scale-s 2s linear 0s infinite reverse ;
+    transition: 500ms;
+  }
+
+@keyframes rotate-scale-s {
+    0% {
+      transform: scaleX(1) ;
+    }
+    50% {
+      transform: scaleX(1.5) ;
+    }
+    100% {
+      transform: scaleX(1) ;
+    }
+  }
+
+.Gif{
+    width: 70%;
+   cursor: pointer;
+   animation: scale-up 2s linear -0s infinite reverse ;
+    transition: 500ms;
+}
+
+@keyframes scale-up {
+    0% {
+      transform: scale(1) ;
+    }
+    50% {
+      transform: scale(1.5) ;
+    }
+    100% {
+      transform: scale(1) ;
+    }
+  }
+
+.fondo{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+}

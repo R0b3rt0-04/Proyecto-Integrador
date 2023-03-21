@@ -1,0 +1,46 @@
+.contenedorHome{
+    background-image: url(/public/fonoespacio.png);
+    background-size: 60%;
+    display: flex;
+    align-items: flex-end;
+       overflow: hidden;        
+       width: 100vw;
+    height: 100vh;
+}
+
+.contenedorCards{    
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 255, 255, 0);
+    height: 100%;
+    width: 100vw;
+}
+
+.tituloHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(116, 30, 30, 0);
+    width: 100%;
+}
+
+.Cards111{
+    overflow-y: scroll;
+
+
+
+
+    
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+
+
+
+
+    height: fit-content;
+    width: 100%;
+    background-color: rgba(165, 42, 42, 0);
+}
+
+

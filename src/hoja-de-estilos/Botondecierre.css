@@ -1,0 +1,24 @@
+
+.Botondecierre {
+  position: absolute;
+  bottom: 48px;
+  margin-left: 148px;
+  z-index: 3;
+  cursor: pointer;
+  border-right: 19px dotted #000;
+  border-left: 19px dotted #000;
+  border-radius: 30px 0 0 30px;
+  font: bold 9px/normal Arial Black, Gadget, sans-serif;
+  color: rgba(255, 0, 0, 0.9);
+  background: linear-gradient(-45deg, #000 0, #000 50%, #000 51%, #000 71%, #000 100%), #fe6502;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-size: auto auto;
+  text-shadow: -1px -1px 0 #0c0c0c;
+  transition: 200ms;
+  transform: rotate(-90deg);
+}
+
+.Botondecierre:hover{
+bottom: 19px;
+}

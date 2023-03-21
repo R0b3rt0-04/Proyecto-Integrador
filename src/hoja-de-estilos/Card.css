@@ -1,0 +1,188 @@
+.personaje0{
+    width: fit-content;
+    margin-bottom: 10px;
+    animation: aparecer 1s ;
+    padding: 1vmin;
+
+  }
+  
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.personaje{
+    width: fit-content;
+    margin-bottom: 10px;
+    padding: 1vmin;
+
+}
+
+.personaje:hover .carta-fondo::after{
+    content: '';
+    position: absolute;
+    height: 720px;
+    width: 100px;
+    background-image: linear-gradient(#c9dc5d, #c9dc5d );
+    animation: rotar 3.5s linear infinite ;
+    margin-left: calc((300px - 100px)/2);
+    visibility: visible;
+    }
+
+.personaje0:hover .carta-fondo::after{
+    content: '';
+    position: absolute;
+    height: 720px;
+    width: 100px;
+    background-image: linear-gradient(#c9dc5d, #c9dc5d );
+    animation: rotar 3.5s linear infinite ;
+    margin-left: calc((300px - 100px)/2);
+    visibility: visible;
+    }
+
+
+.carta-fondo{
+    height: 395px;
+    width: 292.5px;
+    background-color: #184d47;
+    border-radius: 4%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px rgba(72,214,69,.5);
+}
+.carta-fondo::before{
+    left: -2.7px;
+    bottom: 2.6px;
+    content: '';
+    height: 10.3cm;
+    width: 7.49cm;
+    background: linear-gradient(0deg,rgba(20,22,18,.34),rgba(20,22,18,.34)),#81dbcb;
+    background-size: cover;
+    border-radius: 3%;
+    position: absolute;
+    z-index: 1;
+    margin-left: calc((18.75em - 18em )/2);
+
+}
+@keyframes rotar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.fase2favoff{
+    
+    position: absolute;
+    background-image: url("/public/FavOff.png");
+    background-size: cover;
+    width: .87cm;
+    height: 0.77cm;
+    z-index: 9;
+    bottom: 9.5cm;
+    left: 0;
+    margin-left: 13px;
+    border-radius: 0%;
+    transition: 300ms;
+    cursor: pointer;
+}
+.fase2favon{
+    
+    position: absolute;
+    background-image: url("/public/FavOn.png");
+    background-size: cover;
+    width: .87cm;
+    height: 0.77cm;
+    z-index: 9;
+    bottom: 9.5cm;
+    left: 0;
+    margin-left: 13px;
+    border-radius: 0%;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.nombreCarta{
+    width: 100%;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    position: absolute;
+    z-index: 3;
+    top: -1.5rem;    
+    font-size: larger;
+    text-align: center;
+}
+
+.imagen-carta{
+    position: absolute;
+    background-size: cover;
+    z-index: 2;
+    width: 6cm;
+    height: 5.85cm;
+    left: 0.8cm;
+    top: 1.25cm;
+    border-radius: 5%;
+    border-color: #ffffff;
+    border: 4px groove rgb(177, 177, 177);
+
+}
+
+.divInfo{
+    left: -9.5px;
+    height: fit-content;
+    width: 6cm;
+    border: 1px solid #696d6973;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    position: absolute;
+    z-index: 2;
+    top: 17rem ;
+    margin-left: 1.14cm;
+    background-color: rgba(240, 248, 255, 0.507);
+    border-radius: 6%;
+}
+
+.infocard1{
+    text-align: center;
+    padding-top: 1px;
+    padding-left: 3px;
+    font-size: x-large;
+    margin: 0%;
+}
+.infocard2{
+    padding-top: 1px;
+    padding-left: 3px;
+    font-size: medium;
+    margin: 0%; 
+}
+.botoncierre{
+    position: relative;
+    z-index: 3;
+    margin-left: 2.3cm;
+    top: -148px;
+}
+.titulocarta{
+    width: 100%;
+    padding-top: 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: #40FF19;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: capitalize;
+    color: #f8e7e7;
+    text-shadow: 0 0 15px #FFF, 0 0 15px #40FF19
+    
+}
