@@ -11,11 +11,11 @@ const Home = (props) => {
         <div className='tituloHome'>
           <img src="/titulo.png" alt="" width={"28%"} />
           <div className='busqueda' >
-            <SearchBar ordenar={props.ordenar} reboot={props.reboot} random={props.random} onSearch={props.onSearch} />
+            <SearchBar />
           </div>
         </div>
            <div className='Cards111'>
-            <Cards cierre={props.cierre} characters={props.characters}/>
+            <Cards characters={props.characters}/>
             </div> 
         </div>
     </div>

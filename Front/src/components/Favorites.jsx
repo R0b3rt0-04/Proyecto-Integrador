@@ -17,7 +17,7 @@ const Favorites = () => {
     <button onClick={ToCards} >Home<b>↩</b></button>
       </div>
       <div className='paracadrs' >
-        <Cards cierre='' characters={myfavorites} />
+        <Cards />
       </div>
 
 
